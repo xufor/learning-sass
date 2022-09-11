@@ -1,0 +1,30 @@
+// partials & @import
+// partials have _ prefixed to the name. and are thus not compiled by the compiler into a separate file
+// compiler assumes that this file is going to be used in other files
+
+
+// <------- general import order ------->
+// variables & function
+// base & layout
+// colors
+// components i.e. button, card, navbar
+// utilities i.e. margin, padding, opacity
+
+@import './variables';
+@import './base';
+
+.heading {
+    color: $primary;
+    font-family: $defaultFontFamily;
+}
+
+.content {
+    color: $secondary;
+    font-family: $defaultFontFamily;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
