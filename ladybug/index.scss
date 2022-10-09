@@ -1,7 +1,6 @@
 // partials & @import
-// partials have _ prefixed to the name. and are thus not compiled by the compiler into a separate file
+// partials have _ prefixed to the name and are not compiled by the compiler into a separate file
 // compiler assumes that this file is going to be used in other files
-
 
 // <------- general import order ------->
 // variables & function
@@ -11,20 +10,12 @@
 // utilities i.e. margin, padding, opacity
 
 @import './variables';
+@import './functions';
 @import './base';
-
-.heading {
-    color: $primary;
-    font-family: $defaultFontFamily;
-}
-
-.content {
-    color: $secondary;
-    font-family: $defaultFontFamily;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import './breakpoints';
+@import './grid';
+@import './colors';
+@import './components/card';
+@import './components/button';
+@import './components/navbar';
+@import './utilities';
